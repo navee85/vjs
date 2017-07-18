@@ -1,0 +1,26 @@
+{
+  "name": "vjs",
+  "version": "1.0.0",
+  "description": "VideoJS intro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navee85/vjs.git"
+  },
+  "author": "Ewan Pretzel <n4v3385@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navee85/vjs/issues"
+  },
+  "homepage": "https://github.com/navee85/vjs#readme",
+  "devDependencies": {
+    "video.js": "^6.2.0"
+  },
+  "dependencies": {
+    "videojs-brand": "0.0.4",
+    "videojs-playlist-ui": "^3.0.5"
+  }
+}
