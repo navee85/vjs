@@ -20,10 +20,6 @@
 			margin: 0 0 20px;
 			padding: 0 5px;
 		}
-		/*
-		We include some minimal custom CSS to make the playlist UI look good
-		in this context.
-		*/
 		.player-container {
 			background: #1a1a1a;
 			overflow: auto;
@@ -51,14 +47,13 @@
 	<div style="display: block; float: left; margin-bottom: 60px; width:100%;">
 		<h2>Példa</h2>
 
-		<p>Az alábbi funkciókat mutatja be ez a videó:</p>
+		<p>Az alábbi funkciókat valósítja meg a demo:</p>
 		<ul>
 			<li>Sebesség módosítása</li>
 			<li>Playlist használata</li>
 			<li>Thumbnail használata a playlist-hez</li>
 			<li>Autoplay, ha vége az egyiknek indul a másik</li>
-			<li>Automatikus videó indítás</li>
-			<li>Ugrás megjelölt chapter-re</li>
+			<li>Ugrás megjelölt chapter-re (2. videó)</li>
 			<li>Nyelvesített feliratok (2. videó)</li>
 			<li>Brand ikon használata</li>
 		</ul>
@@ -172,67 +167,3 @@
 	 	</script>
 	 </div>
 </body>
-
-<?php
-
-/*
-Remote source
-=============
-sources: [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=HswIHVN5D4o"}]
-view-source:https://sunnyli.github.io/videojs-ass/example.html
-
-WebVTT
-
-Chapters: http://html5videoguide.net/demos/google_io/3_navigation/
-
-
-Videojs plugin-ok: 
-
-[1. Brand]: https://www.npmjs.com/package/videojs-brand
-
-
-
-Maga a dokumentáció:
-http://docs.videojs.com/
-
-Piszok nagy plugin gyűjtemény:
-https://github.com/videojs/video.js/wiki/Plugins
-
-
-További maybe hasznos plugin-ek:
-
-
-
-Quality selector:
-
-Egy descriptor alapján lehet változtatni a különböző minőségű videók között:
-
-	player.qualityselector({
-		sources: [
-		{ format: 'highres', src: 'http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4', type: 'video/mp4'},
-		{ format: 'hd1080', src: 'http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4', type: 'video/mp4'},
-		{ format: 'hd720', src: 'http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4', type: 'video/mp4'},
-		{ format: 'large', src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4'},
-		{ format: 'medium', src: 'http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4', type: 'video/mp4'},
-		{ format: 'small', src: 'http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4', type: 'video/mp4'},
-		{ format: 'auto', src: 'http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4', type: 'video/mp4'}
-	],
-	formats: [
-		{ code: 'highres', name: 'High' },
-		{ code: 'hd1080', name: '1080p' },
-		{ code: 'hd720', name: '720p' },
-		{ code: 'large', name: '480p' },
-		{ code: 'medium', name: '360p' },
-		{ code: 'small', name: '240p' },
-		{ code: 'auto', name: 'Auto' }
-	],
-
-	onFormatSelected: function(format) {
-		console.log(format);
-	}
-	});
-
-https://www.npmjs.com/package/videojs-qualityselector
-
-
-*/
