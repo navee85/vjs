@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "videojs-brand": "0.0.4",
+    "videojs-playlist": "^4.0.0",
     "videojs-playlist-ui": "^3.0.5"
   }
 }
