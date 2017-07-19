@@ -6,7 +6,6 @@ Az alábbi funkciókat valósítja meg a demo:
 * Playlist használata
 * Thumbnail használata a playlist-hez
 * Autoplay, ha vége az egyiknek indul a másik
-* Automatikus videó indítás
 * Ugrás megjelölt chapter-re
 * Nyelvesített feliratok
 * Brand ikon használata
